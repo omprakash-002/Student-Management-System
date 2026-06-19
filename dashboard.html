@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Management - Dashboard</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        a,
+        button {
+            display: inline-block;
+            padding: 8px 12px;
+            margin: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Student Management Dashboard</h2>
+
+    <p>
+        Welcome,
+        <strong id="loggedInUser">Student</strong>
+    </p>
+
+    <div class="section">
+
+        <h3>Statistics</h3>
+
+        <p>
+            Total Students:
+            <span id="totalStudents">0</span>
+        </p>
+
+        <p>
+            ECE Students:
+            <span id="eceCount">0</span>
+        </p>
+
+        <p>
+            CSE Students:
+            <span id="cseCount">0</span>
+        </p>
+
+        <p>
+            EEE Students:
+            <span id="eeeCount">0</span>
+        </p>
+
+    </div>
+
+    <hr>
+
+    <div class="section">
+
+        <h3>Modules</h3>
+
+        <a href="students.html">
+            Student List
+        </a>
+
+        <a href="marks.html">
+            Marks Management
+        </a>
+
+        <button onclick="logout()">
+            Logout
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

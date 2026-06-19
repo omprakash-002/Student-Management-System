@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Marks Management</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #errorMsg {
+            color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Marks Management</h2>
+
+    <label for="maths">
+        Mathematics
+    </label>
+    <input type="number" id="maths">
+
+    <label for="physics">
+        Physics
+    </label>
+    <input type="number" id="physics">
+
+    <label for="chemistry">
+        Chemistry
+    </label>
+    <input type="number" id="chemistry">
+
+    <label for="english">
+        English
+    </label>
+    <input type="number" id="english">
+
+    <label for="programming">
+        Programming Fundamentals
+    </label>
+    <input type="number" id="programming">
+
+    <button onclick="calculateMarks()">
+        Calculate Result
+    </button>
+
+    <hr>
+
+    <h3>Result</h3>
+
+    <p>
+        Total Marks:
+        <span id="totalMarks">0</span>
+    </p>
+
+    <p>
+        Average Marks:
+        <span id="averageMarks">0</span>
+    </p>
+
+    <p>
+        Grade:
+        <span id="grade">-</span>
+    </p>
+
+    <div id="errorMsg"></div>
+
+    <br>
+
+    <a href="dashboard.html">
+        Back To Dashboard
+    </a>
+
+</div>
+
+<script src="js/marks.js"></script>
+
+</body>
+</html>
